@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/personal-site",
   siteMetadata: {
     title: `Paulina Sędłak-Jakubowska`,
     description: `Personal page of Paulina Sędłak-Jakubowska, frontend developer`,
