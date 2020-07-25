@@ -1,15 +1,11 @@
-.psj-experience-wrapper {
-    @extend %grid;
-    @extend %grid-with-sidebar;
-}
-
-.psj-experience-sidebar {
-    grid-row: 1 / 5;
-}
-
 .psj-experience-column {
-    grid-column: 2;
     position: relative;
+    margin-bottom: 8rem;
+
+    @media (min-width: 880px) {
+        max-width: 70rem;
+        margin-left: 12rem;
+    }
 
     &::before {
         @extend %dots;
@@ -25,6 +21,7 @@
 
     small {
         display: block;
+        color: var(--less-grey);
     }
 }
 
