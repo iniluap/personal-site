@@ -12,6 +12,9 @@ export default function Home() {
       <About />
       <Skills />
       <Experience />
+      <a target="_blank" rel="noreferrer" className="psj-button psj-button-cta" href="https://github.com/iniluap/personal-site">
+        See this project on GitHub
+      </a>
       <Footer />
     </main>
   );

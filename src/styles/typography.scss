@@ -50,11 +50,16 @@ a {
     padding: 1rem 2rem;
     border: 2px solid var(--primary-green);
 
-    &:hover,
-    &:visited {
+    &:hover {
         border-color: var(--accent-yellow);
         color: var(--text-black);
     }
+}
+
+.psj-button-cta {
+    display: block;
+    margin: auto;
+    width: max-content;
 }
 
 .psj-section-title {

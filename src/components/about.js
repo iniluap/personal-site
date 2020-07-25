@@ -13,9 +13,9 @@ export default function About() {
           I am active in the Warsaw programming community.
         </p>
         <p>
-          Since 2017, as a part of <a target="_blank" href="https://www.pylight.org/">PyLight Meetup</a> group I&nbsp;have organised workshops
+          Since 2017, as a part of <a target="_blank" rel="noreferrer" href="https://www.pylight.org/">PyLight Meetup</a> group I&nbsp;have organised workshops
           and monthly meetups for beginer Python developers. I&nbsp;coordinate speakers, manage social media accounts and on-site preparations.
-          Check out <a target="_blank" href="https://youtu.be/N34jrb-IL2E">my talk</a> on Scrum fundamentals from PyLight&nbsp;#8.
+          Check out <a target="_blank" rel="noreferrer" href="https://youtu.be/N34jrb-IL2E">my talk</a> on Scrum fundamentals from PyLight&nbsp;#8.
         </p>
         <p>
           I organised Django Girls - the programming workshops for a group of 45 women. I&nbsp;managed
