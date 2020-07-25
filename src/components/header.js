@@ -11,7 +11,7 @@ export default function Header() {
         />
       </figure>
       <div className="psj-header-text-wrapper">
-        <h1>Paulina Sędłak-Jakubowska</h1>
+        <h1>Paulina Sędłak&#8209;Jakubowska</h1>
         <h2>frontend developer</h2>
       </div>
     </header>

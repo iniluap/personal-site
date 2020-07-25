@@ -4,7 +4,6 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import Portfolio from '../components/portfolio';
 import Experience from '../components/experience';
-import Community from '../components/community';
 import Footer from '../components/footer';
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
       <Skills />
       <Experience />
       <Portfolio />
-      <Community />
       <Footer />
     </main>
   );
