@@ -2,7 +2,7 @@
     --primary-green: #1c544D;
     --accent-yellow: #cca21b;
     --text-black: #181611;
-    --less-grey: #7b8595;
+    --less-grey: #666f7d;
     --background-grey: #e4ecf4;
 }
 
@@ -26,8 +26,9 @@ main {
     max-width: 2000px;
     margin: 0 auto;
     padding: 0 4vw;
+    overflow-x: hidden;
 }
 
 article {
-    padding: 3rem;
+    padding: 3rem 0;
 }

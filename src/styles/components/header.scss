@@ -12,8 +12,12 @@
 
 .psj-header-image-wrapper {
     position: relative;
-    margin: 0 2rem 0 0;
-    max-width: 350px;
+    margin: 0 auto;
+    max-width: 250px;
+
+    @media (min-width: 880px) {
+        max-width: 350px;
+    }
 
     &::after {
         content: '';
@@ -40,6 +44,6 @@
     }
 
     h2 {
-        color: var(--accent-yellow);
+        color: #8f6e03;
     }
 }
