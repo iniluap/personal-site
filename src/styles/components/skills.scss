@@ -1,0 +1,25 @@
+.psj-skills-wrapper {
+    @extend %grid;
+    @extend %grid-columns;
+}
+
+.psj-skills-column {
+    border-bottom: 2px solid var(--background-grey);
+    transition: border-bottom-color 0.2s ease-in-out;
+
+    &:hover {
+        border-bottom-color: var(--primary-green);
+    }
+
+    h3, small {
+        text-align: center;
+    }
+
+    small {
+        display: block;
+    }
+
+    p {
+        margin-top: 3rem;
+    }
+}

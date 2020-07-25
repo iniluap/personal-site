@@ -18,10 +18,16 @@ body {
     color: var(--text-black);
     font-family: 'Helvetica';
     font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
 }
 
 main {
     max-width: 2000px;
     margin: 0 auto;
-    padding: 6rem;
+    padding: 0 6rem;
+}
+
+article {
+    padding: 3rem;
 }

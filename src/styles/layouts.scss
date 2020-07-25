@@ -1,0 +1,12 @@
+%grid {
+    display: grid;
+    gap: 2rem;
+}
+
+%grid-columns {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+%grid-tiles {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
