@@ -1,0 +1,26 @@
+.psj-about-wrapper {
+    position: relative;
+}
+
+.psj-decorative-circle {
+    position: absolute;
+    bottom: 0rem;
+    right: -1rem;
+    z-index: -1;
+    @extend %circle;
+
+    &::after {
+        @extend %dots;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -2.5rem;
+        right: -0.5rem;
+        background-image:
+            radial-gradient(var(--accent-yellow) 20%, transparent 0), 
+            radial-gradient(var(--primary-green) 10%, transparent 0);
+        width: 7rem;
+        height: 7rem;
+        transform: rotate(35deg);
+    }
+}

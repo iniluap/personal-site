@@ -3,5 +3,12 @@
         radial-gradient(var(--less-grey) 15%, transparent 0), 
         radial-gradient(var(--primary-green) 20%, transparent 0);
     background-size: 30px 30px;
-    background-position: 10px 5px, 20px 20px;
+    background-position: 5px 5px, 20px 20px;
+}
+
+%circle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: var(--background-grey);
 }

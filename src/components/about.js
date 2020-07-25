@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <article>
+    <article className="psj-about-wrapper">
         <h2 className="psj-section-title">About me</h2>
         <p>
           I am a self-taught frontend developer with experience in a&nbsp;corporate setting and freelance projects.
@@ -21,6 +21,7 @@ export default function About() {
           I organised Django Girls - the programming workshops for a group of 45 women. I&nbsp;managed
           the&nbsp;event website, trained mentors and designed printed and online materials.
         </p>
+        <div class="psj-decorative-circle"></div>
     </article>
   );
 }
