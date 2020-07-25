@@ -1,0 +1,27 @@
+:root {
+    --primary-green: #1c544D;
+    --accent-yellow: #cca21b;
+    --text-black: #181611;
+    --less-grey: #7b8595;
+    --background-grey: #e4ecf4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+} 
+
+body {
+    color: var(--text-black);
+    font-family: 'Helvetica';
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 6rem;
+}

@@ -1,0 +1,30 @@
+.psj-header-wrapper {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 8rem;
+    align-items: center;
+}
+
+.psj-header-image-wrapper {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 5px solid var(--primary-green);
+    }
+}
+
+.psj-header-image {
+    width: 100%;
+    height: auto;
+}
+
+.psj-header-text-wrapper {
+    
+}
