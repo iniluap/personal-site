@@ -9,9 +9,14 @@
 
     &:hover {
         border-bottom-color: var(--primary-green);
+
+        h3 {
+            color: var(--primary-green);
+        }
     }
 
     h3, small {
+        font-weight: 400;
         text-align: center;
     }
 

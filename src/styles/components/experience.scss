@@ -1,0 +1,35 @@
+.psj-experience-wrapper {
+    @extend %grid;
+    @extend %grid-with-sidebar;
+}
+
+.psj-experience-sidebar {
+    grid-row: 1 / 5;
+}
+
+.psj-experience-column {
+    grid-column: 2;
+    position: relative;
+
+    &::before {
+        @extend %dots;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -10rem;
+        width: 7rem;
+        height: 7rem;
+        transform: rotate(15deg);
+    };
+
+    small {
+        display: block;
+    }
+}
+
+.psj-experience-position {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-yellow);
+}
