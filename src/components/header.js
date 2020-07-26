@@ -5,7 +5,7 @@ export default function Header() {
     <header className="psj-header-wrapper">
       <figure className="psj-header-image-wrapper">
         <img
-          src="/header-image.png"
+          src={`header-image.png`}
           alt="Paulina Sedlak-Jakubowska"
           className="psj-header-image"
         />
