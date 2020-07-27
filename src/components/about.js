@@ -21,7 +21,6 @@ export default function About() {
           I organised Django Girls - the programming workshops for a group of 45 women. I&nbsp;managed
           the&nbsp;event website, trained mentors and designed printed and online materials.
         </p>
-        <div className="psj-decorative-circle"></div>
     </article>
   );
 }

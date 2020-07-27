@@ -64,7 +64,7 @@ export default function Experience() {
             <p>
                 I was a camp director and a&nbsp;supporting mentor during two summer camps for children.
                 I&nbsp;successfully conducted programming classes for children aged 7 - 15, teaching them
-                anguages (such as Scratch and JavaScript) and other STEM activities.
+                languages (such as Scratch and JavaScript) and other STEM activities.
                 Explaining coding to children helped me understand its concepts better.
             </p>
         </div>

@@ -1,13 +1,17 @@
 .psj-about-wrapper {
     position: relative;
-}
 
-.psj-decorative-circle {
-    position: absolute;
-    bottom: 0rem;
-    right: -1rem;
-    z-index: -1;
-    @extend %circle;
+    &::before {
+        @extend %circle;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0rem;
+        right: -1rem;
+        width: 15rem;
+        height: 15rem;
+        z-index: -1;
+    }
 
     &::after {
         @extend %dots;

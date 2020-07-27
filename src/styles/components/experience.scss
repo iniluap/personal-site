@@ -1,7 +1,7 @@
 .psj-experience-column {
     position: relative;
     margin-bottom: 8rem;
-    margin-left: 8vw;
+    margin-left: 10vw;
 
     @media (min-width: 880px) {
         max-width: 70rem;
@@ -15,11 +15,31 @@
         display: block;
         position: absolute;
         top: 0;
-        left: -10rem;
+        left: -9rem;
         width: 7rem;
         height: 7rem;
         transform: rotate(15deg);
-    };
+
+        @media (min-width: 880px) {
+            left: -11rem;
+        }
+    }
+
+    &::after {
+        @extend %circle;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -6.5rem;
+        left: -13.5rem;
+        width: 11rem;
+        height: 11rem;
+        z-index: -1;
+
+        @media (min-width: 880px) {
+            left: -15.5rem;
+        }
+    }
 
     small {
         display: block;
