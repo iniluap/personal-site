@@ -14,4 +14,4 @@ I've decided to carry on and I'm going to add more content. Stay tuned! 🚀
 
 * gatsby.js
 * sass
-* gh-pages for development
+* gh-pages for deployment
