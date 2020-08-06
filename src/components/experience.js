@@ -19,9 +19,10 @@ export default function Experience() {
             </p>
             <ul>
                 <li>SASS with SMACCS methodology</li>
+                <li>JavaScript with TypeScript, ES5 & ES6 standards and jQuery</li>
+                <li>Angular with rxjs</li>
                 <li>PHP 7.x</li>
                 <li>AMP pages</li>
-                <li>JavaScript with jQuery, ES5 & ES6 standards and TypeScript</li>
             </ul>
             <p>
                 I comply with the coding standards with static analysis and linters.
