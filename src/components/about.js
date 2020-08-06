@@ -10,6 +10,10 @@ export default function About() {
           I&nbsp;am passionate about learning and giving others opportunities to learn.
         </p>
         <p>
+          In the course of my career, I was lucky to work on various projects, based on various frameworks and programming languages.
+          But what drives me is to create a&nbsp;unique and top-notch experience for users.
+        </p>
+        <p>
           I am active in the Warsaw programming community.
         </p>
         <p>
@@ -18,7 +22,7 @@ export default function About() {
           Check out <a target="_blank" rel="noreferrer" href="https://youtu.be/N34jrb-IL2E">my talk</a> on Scrum fundamentals from PyLight&nbsp;#8.
         </p>
         <p>
-          I organised Django Girls - the programming workshops for a group of 45 women. I&nbsp;managed
+          I organised two editions of Django Girls - the programming workshops for a group of 45 women. I&nbsp;managed
           the&nbsp;event website, trained mentors and designed printed and online materials.
         </p>
     </article>
