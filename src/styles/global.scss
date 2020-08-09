@@ -32,3 +32,14 @@ main {
 article {
     padding: 3rem 0;
 }
+
+.psj-404-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.psj-404 {
+    margin: 4rem 0;
+}
