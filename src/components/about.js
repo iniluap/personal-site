@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <article className="psj-about-wrapper">
+    <article className="psj-about-wrapper js-intersecting-element">
         <h2 className="psj-section-title">About me</h2>
         <p>
           I am a self-taught frontend developer with experience in a&nbsp;corporate setting and freelance projects.

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Experience() {
   return (
-    <article>
+    <article className="js-intersecting-element">
         <h2 className="psj-section-title">Experience</h2>
         <div className="psj-experience-column">
             <h3>Postclick & Instapage, Warsaw</h3>

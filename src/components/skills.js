@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Skills() {
   return (
-    <article>
+    <article className="js-intersecting-element">
         <h2 className="psj-section-title">Skills</h2>
         <div className="psj-skills-wrapper">
             <div className="psj-skills-column">
