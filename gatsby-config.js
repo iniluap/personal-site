@@ -10,10 +10,12 @@ module.exports = {
     title: `Paulina Sędłak-Jakubowska`,
     description: `Personal page of Paulina Sędłak-Jakubowska, frontend developer`,
     author: `iniluap`,
+    siteUrl: 'https://paulina.s-j.me',
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-cname',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
