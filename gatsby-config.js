@@ -1,34 +1,38 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  pathPrefix: "/personal-site",
   siteMetadata: {
-    title: `Paulina Sędłak-Jakubowska`,
-    description: `Personal page of Paulina Sędłak-Jakubowska, frontend developer`,
-    author: `iniluap`,
-    siteUrl: 'https://paulina.s-j.me',
+    title: `Paulina Sedlak-Jakubowska`,
+    siteUrl: `https://paulina.s-j.me`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-cname',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#1c544D`,
-        theme_color: `#1c544D`,
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: `standalone`,
-        icon: `static/icon.svg`, // This path is relative to the root of the site.
+        icon: 'src/images/icon.png',
       },
-    }
-  ]
+    },
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: './src/pages/',
+      },
+      __key: 'pages',
+    },
+    `gatsby-plugin-fontawesome-css`,
+  ],
 };
