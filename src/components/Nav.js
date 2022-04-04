@@ -38,15 +38,6 @@ export default function Nav() {
         </li>
         <li>
           <Link
-            to="/experience"
-            className="nav-link"
-            aria-label="Go to My experience"
-          >
-            My experience
-          </Link>
-        </li>
-        <li>
-          <Link
             to="/education"
             className="nav-link"
             aria-label="Go to My Education"

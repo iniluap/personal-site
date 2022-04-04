@@ -76,7 +76,7 @@ export default function TechnologiesPage() {
       <SectionHeader sectionTitle="Technologies" />
       <section>
         <TechnologiesLabel>Development</TechnologiesLabel>
-        <TechnologiesListStyled>
+        <TechnologiesListStyled className="m-top-3">
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faHtml5} />
             HTML
@@ -129,7 +129,7 @@ export default function TechnologiesPage() {
       </section>
       <section>
         <TechnologiesLabel>Design</TechnologiesLabel>
-        <TechnologiesListStyled>
+        <TechnologiesListStyled className="m-top-3">
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faBrush} />
             Visual design
@@ -150,7 +150,7 @@ export default function TechnologiesPage() {
       </section>
       <section>
         <TechnologiesLabel>Product</TechnologiesLabel>
-        <TechnologiesListStyled>
+        <TechnologiesListStyled className="m-top-3">
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faArrowsSplitUpAndLeft} />
             Agile
@@ -175,7 +175,7 @@ export default function TechnologiesPage() {
       </section>
       <section>
         <TechnologiesLabel>Processes</TechnologiesLabel>
-        <TechnologiesListStyled>
+        <TechnologiesListStyled className="m-top-3">
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faGit} />
             Git

@@ -4,20 +4,22 @@ import ResourceLinks from './ResourceLinks';
 
 const CardStyles = styled.section`
   border: 2px solid var(--primary-yellow);
-  box-shadow: 10px 10px 0px -3px var(--light-grey);
+  box-shadow: var(--layered-shadow);
   padding: 1rem;
 
   h3 {
     margin-bottom: 1rem;
+    font-size: 2.2rem;
   }
 
   h4 {
-    color: var(--secondary-blue);
-    font-weight: 600;
+    color: var(--primary-green);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
   }
 
   .date {
-    color: var(--dark-grey);
+    color: var(--secondary-blue);
     font-size: 1rem;
   }
 `;

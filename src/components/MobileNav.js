@@ -52,10 +52,13 @@ const MobileNavTriggerStyle = styled.a`
   }
 
   &.open-trigger {
-    background-color: var(--white);
-    box-shadow: 4px 4px 0px 0px var(--light-grey);
-    border: 2px solid var(--light-grey);
-    border-right: none;
+    padding-left: 2.5rem;
+    background-color: var(--primary-yellow);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%),
+      0px 4px 14px 0px rgb(46 41 51 / 8%);
+    color: white;
     z-index: 100;
   }
 
@@ -85,15 +88,6 @@ export default function MobileNav() {
               aria-label="Go to Technologies I use"
             >
               Technologies I use
-            </Link>
-          </MobileNavLiStyled>
-          <MobileNavLiStyled>
-            <Link
-              to="/experience"
-              className="nav-link"
-              aria-label="Go to My experience"
-            >
-              My experience
             </Link>
           </MobileNavLiStyled>
           <MobileNavLiStyled>

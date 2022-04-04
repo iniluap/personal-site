@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     --secondary-rose: #c4625a;
     --whitespace-primary: 2rem;
     --whitespace-secondary: 3rem;
+    --layered-shadow: 0 1px 1px rgb(46 41 51 / 8%),
+              0 2px 2px rgb(46 41 51 / 8%),
+              0 4px 4px rgb(46 41 51 / 8%),
+              0 8px 8px rgb(46 41 51 / 8%);
   }
 
   * {
