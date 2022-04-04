@@ -51,7 +51,7 @@ export default function Nav() {
             className="nav-link"
             aria-label="Go to Writing samples page"
           >
-            Community activities
+            Community work
           </Link>
         </li>
         <li>

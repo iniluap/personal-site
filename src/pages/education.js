@@ -20,12 +20,7 @@ const EducationStyles = styled.div`
 export default function EducationPage() {
   return (
     <EducationStyles>
-      <SectionHeader
-        sectionTitle="My education"
-        sectionLead="These are examples of how I use words as a Technical Writer. Use these
-      when trying to recruit me. The PDFs show the content as it was at the
-      time of Education."
-      />
+      <SectionHeader sectionTitle="My education" />
 
       <div className="card-wrapper">
         <Card
@@ -53,7 +48,7 @@ export default function EducationPage() {
         ></Card>
 
         <Card
-          title="Bachelor’s Degree in English Philology"
+          title="English Philology, B.A."
           subtitle="University of Silesia in Katowice"
           date="2015"
           content="Thesis in applied linguistics on socio-cultural images of femininity in newspaper discourse."

@@ -105,7 +105,7 @@ export default function MobileNav() {
               className="nav-link"
               aria-label="Go to Writing samples page"
             >
-              Community activities
+              Community work
             </Link>
           </MobileNavLiStyled>
           <MobileNavLiStyled>

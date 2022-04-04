@@ -7,6 +7,12 @@ const ProjectsStyles = styled.div`
   display: grid;
   gap: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  @media screen and (min-width: 768px) {
+    section:first-child {
+      grid-column: 1 / span 2;
+    }
+  }
 `;
 
 export default function ProjectsPage() {

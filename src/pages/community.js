@@ -14,11 +14,11 @@ const CommunityStyles = styled.div`
 export default function CommunityPage() {
   return (
     <CommunityStyles>
-      <SectionHeader sectionTitle="Community activities" />
+      <SectionHeader sectionTitle="Community work" />
       <div className="card-wrapper">
         <Card
-          title="Organiser"
-          subtitle="PyLight Waw"
+          title="PyLight Waw"
+          subtitle="Organiser"
           date="2017 - 2020, Warsaw, Poland"
           content="I organised a monthly meetup for beginners in Python. I was one of
               the people who updated and tweaked the website, ran social media
@@ -32,8 +32,8 @@ export default function CommunityPage() {
         ></Card>
 
         <Card
-          title="Speaker"
-          subtitle="PyLight Waw #8"
+          title="PyLight Waw #8"
+          subtitle="Speaker"
           date="Sep 2018, Warsaw, Poland"
           content="I delivered a presentation on the basic concepts of Scrum."
           link1Url="https://www.youtube.com/watch?v=N34jrb-IL2E"
@@ -45,8 +45,8 @@ export default function CommunityPage() {
         ></Card>
 
         <Card
-          title="Organiser"
-          subtitle="DjangoGirls Warsaw"
+          title="DjangoGirls Warsaw"
+          subtitle="Organiser"
           date="Dec 2016 - Feb 2019, Warsaw, Poland"
           content="I co-organised two editions of a programming workshop for a group of 45 women. I managed the event website, trained mentors, and designed printed and online graphic materials."
           link1Url="https://djangogirls.org/en/warszawa/"
@@ -58,8 +58,8 @@ export default function CommunityPage() {
         ></Card>
 
         <Card
-          title="Training Coordinator &amp; Youth Leader"
-          subtitle="CISV International"
+          title="CISV International"
+          subtitle="Training Coordinator &amp; Youth Leader"
           date="Jun 2014 - Present, EMEA &amp; Poland"
           content="I designed and conducted trainings on peace education, sustainable development and conflict resolution on both local and international level, for children, young adults and adult volounteers."
           link1Url="https://pl.cisv.org/"

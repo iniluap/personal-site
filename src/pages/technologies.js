@@ -32,9 +32,13 @@ import {
   faFootballBall,
 } from '@fortawesome/free-solid-svg-icons';
 
-const TechnologiesStyles = styled.div`
-  section {
-    margin-bottom: 6rem;
+const TechnologiesSectionStyles = styled.section`
+  margin-bottom: 6rem;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: start;
   }
 `;
 
@@ -50,12 +54,18 @@ const TechnologiesLabel = styled.h3`
 `;
 
 const TechnologiesListStyled = styled.ul`
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
 `;
 
 const TechnologyItemStyled = styled.li`
@@ -72,11 +82,11 @@ const TechnologyItemStyled = styled.li`
 
 export default function TechnologiesPage() {
   return (
-    <TechnologiesStyles>
+    <div>
       <SectionHeader sectionTitle="Technologies" />
-      <section>
+      <TechnologiesSectionStyles>
         <TechnologiesLabel>Development</TechnologiesLabel>
-        <TechnologiesListStyled className="m-top-3">
+        <TechnologiesListStyled>
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faHtml5} />
             HTML
@@ -126,10 +136,10 @@ export default function TechnologiesPage() {
             Command line
           </TechnologyItemStyled>
         </TechnologiesListStyled>
-      </section>
-      <section>
+      </TechnologiesSectionStyles>
+      <TechnologiesSectionStyles>
         <TechnologiesLabel>Design</TechnologiesLabel>
-        <TechnologiesListStyled className="m-top-3">
+        <TechnologiesListStyled>
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faBrush} />
             Visual design
@@ -147,10 +157,10 @@ export default function TechnologiesPage() {
             Figma
           </TechnologyItemStyled>
         </TechnologiesListStyled>
-      </section>
-      <section>
+      </TechnologiesSectionStyles>
+      <TechnologiesSectionStyles>
         <TechnologiesLabel>Product</TechnologiesLabel>
-        <TechnologiesListStyled className="m-top-3">
+        <TechnologiesListStyled>
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faArrowsSplitUpAndLeft} />
             Agile
@@ -172,10 +182,10 @@ export default function TechnologiesPage() {
             GSuite
           </TechnologyItemStyled>
         </TechnologiesListStyled>
-      </section>
-      <section>
+      </TechnologiesSectionStyles>
+      <TechnologiesSectionStyles>
         <TechnologiesLabel>Processes</TechnologiesLabel>
-        <TechnologiesListStyled className="m-top-3">
+        <TechnologiesListStyled>
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faGit} />
             Git
@@ -193,7 +203,7 @@ export default function TechnologiesPage() {
             Sentry
           </TechnologyItemStyled>
         </TechnologiesListStyled>
-      </section>
-    </TechnologiesStyles>
+      </TechnologiesSectionStyles>
+    </div>
   );
 }

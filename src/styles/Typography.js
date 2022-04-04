@@ -18,7 +18,7 @@ const Typography = createGlobalStyle`
 
   a {
     color: var(--dark-grey);
-    text-decoration-color: var(--primary-yellow);
+    text-decoration-color: var(--primary-green);
     text-decoration-thickness: 0.2rem;
 
     &:hover {
