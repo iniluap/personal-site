@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --primary-green: #1c544D;
     --primary-yellow: #cca21b;
     --secondary-blue: #8a9a9c;
-    --secondary-rosee: #c4625a;
+    --secondary-rose: #c4625a;
     --whitespace-primary: 2rem;
     --whitespace-secondary: 3rem;
   }

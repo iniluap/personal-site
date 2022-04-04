@@ -3,6 +3,22 @@ import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const HeaderStyles = styled.header`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 4rem;
+    align-items: end;
+    margin-bottom: 6rem;
+  }
+
+  div {
+    margin-top: 3rem;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      height: min-content;
+    }
+  }
+
   h1 {
     font-size: clamp(3rem, 7vw, 5rem);
     margin: 0.5rem 0;
@@ -47,12 +63,14 @@ export default function Header() {
           loading="eager"
         />
       </HeaderImageWrapperStyles>
-      <h1>
-        Paulina
-        <br />
-        Sedlak-Jakubowska
-      </h1>
-      <h2>frontend developer</h2>
+      <div>
+        <h1>
+          Paulina
+          <br />
+          Sedlak-Jakubowska
+        </h1>
+        <h2>frontend developer</h2>
+      </div>
     </HeaderStyles>
   );
 }
