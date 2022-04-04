@@ -36,7 +36,8 @@ const HeaderImageWrapperStyles = styled.figure`
   margin: 0 auto;
   max-width: 250px;
 
-  @media (min-width: 880px) {
+  @media (min-width: 768px) {
+    margin: 0;
     max-width: 350px;
   }
 

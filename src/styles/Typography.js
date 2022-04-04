@@ -10,7 +10,7 @@ const Typography = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Shadows Into Light', sans-serif;
     font-weight: normal;
     margin: 0;
     line-height: 1.5;
