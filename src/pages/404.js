@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 // styles
 const CodeStyles = styled.code`
-  color: var(--blue);
+  color: var(--secondary-blue);
   padding: 0.5rem;
-  background-color: var(--grey);
+  background-color: var(--light-grey);
   font-size: 1.25rem;
   border-radius: 4rem;
 `;

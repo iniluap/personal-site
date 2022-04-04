@@ -53,8 +53,8 @@ const MobileNavTriggerStyle = styled.a`
 
   &.open-trigger {
     background-color: var(--white);
-    box-shadow: 4px 4px 0px 0px var(--grey);
-    border: 2px solid var(--grey);
+    box-shadow: 4px 4px 0px 0px var(--light-grey);
+    border: 2px solid var(--light-grey);
     border-right: none;
     z-index: 100;
   }
@@ -80,38 +80,38 @@ export default function MobileNav() {
           </MobileNavLiStyled>
           <MobileNavLiStyled>
             <Link
-              to="/skills"
+              to="/technologies"
               className="nav-link"
-              aria-label="Go to Things I'm good at page"
+              aria-label="Go to Technologies I use"
             >
-              Things I'm good at
+              Technologies I use
             </Link>
           </MobileNavLiStyled>
           <MobileNavLiStyled>
             <Link
-              to="/talks"
+              to="/experience"
               className="nav-link"
-              aria-label="Go to Talks page"
+              aria-label="Go to My experience"
             >
-              Talks
+              My experience
             </Link>
           </MobileNavLiStyled>
           <MobileNavLiStyled>
             <Link
-              to="/articles"
+              to="/education"
               className="nav-link"
-              aria-label="Go to Articles page"
+              aria-label="Go to My Education"
             >
-              Articles
+              My Education
             </Link>
           </MobileNavLiStyled>
           <MobileNavLiStyled>
             <Link
-              to="/writing"
+              to="/community"
               className="nav-link"
               aria-label="Go to Writing samples page"
             >
-              Writing samples
+              Community activities
             </Link>
           </MobileNavLiStyled>
           <MobileNavLiStyled>

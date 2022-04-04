@@ -18,7 +18,7 @@ const Typography = createGlobalStyle`
 
   a {
     color: var(--dark-grey);
-    text-decoration-color: var(--teal);
+    text-decoration-color: var(--primary-yellow);
     text-decoration-thickness: 0.2rem;
 
     &:hover {
@@ -34,7 +34,7 @@ const Typography = createGlobalStyle`
 
     &:hover {
       transform: scale(1.1);
-      text-decoration: underline var(--teal);
+      text-decoration: underline var(--primary-green);
       text-decoration-thickness: 0.2rem;
     }
   }
