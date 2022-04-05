@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/personal-site',
+  pathPrefix: '/',
   siteMetadata: {
     title: `Paulina Sędłak-Jakubowska`,
     description: `Personal page of Paulina Sędłak-Jakubowska, frontend developer`,
@@ -17,6 +17,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        short_name: 'P. Sędłak-Jakubowska',
+        name: 'Paulina Sędłak-Jakubowska',
         icon: 'src/images/icon.svg',
         background_color: `#1c544D`,
         theme_color: `#1c544D`,
