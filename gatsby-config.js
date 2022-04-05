@@ -1,6 +1,9 @@
 module.exports = {
+  pathPrefix: '/personal-site',
   siteMetadata: {
-    title: `Paulina Sedlak-Jakubowska`,
+    title: `Paulina Sędłak-Jakubowska`,
+    description: `Personal page of Paulina Sędłak-Jakubowska, frontend developer`,
+    author: `Paulina Sędłak-Jakubowska`,
     siteUrl: `https://paulina.s-j.me`,
   },
   plugins: [
@@ -10,10 +13,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-cname',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: 'src/images/icon.svg',
+        background_color: `#1c544D`,
+        theme_color: `#1c544D`,
       },
     },
     'gatsby-plugin-mdx',

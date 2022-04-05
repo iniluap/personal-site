@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -25,6 +26,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^4.6.0",
+    "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-manifest": "^4.6.0",
@@ -42,5 +44,8 @@
     "react-helmet": "^6.1.0",
     "sass": "^1.49.0",
     "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
