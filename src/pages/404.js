@@ -1,17 +1,41 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Footer from '../components/footer';
+import * as React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-export default function Home() {
+// styles
+const CodeStyles = styled.code`
+  color: var(--secondary-blue);
+  padding: 0.5rem;
+  background-color: var(--light-grey);
+  font-size: 1.25rem;
+  border-radius: 4rem;
+`;
+
+// markup
+const NotFoundPage = () => {
   return (
-    <main className="psj-404-wrapper">
-      <Helmet
-        title="P. Sędłak-Jakubowska | frontend developer" />
-      <div className="psj-404">
-        <h1>Page not found</h1>
-        <a href="/">Go to homepage</a>
-      </div>
-      <Footer />
-    </main>
+    <>
+      <title>Not found</title>
+      <h1>Page not found</h1>
+      <p>
+        Sorry{' '}
+        <span role="img" aria-label="Pensive emoji">
+          😔
+        </span>{' '}
+        we couldn’t find what you were looking for.
+        <br />
+        {process.env.NODE_ENV === 'development' ? (
+          <>
+            <br />
+            Try creating a page in <CodeStyles>src/pages/</CodeStyles>.
+            <br />
+          </>
+        ) : null}
+        <br />
+        <Link to="/">Go home</Link>.
+      </p>
+    </>
   );
-}
+};
+
+export default NotFoundPage;

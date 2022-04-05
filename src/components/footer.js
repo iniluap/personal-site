@@ -1,15 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const FooterStyles = styled.footer`
+  grid-area: footer;
+  text-align: center;
+  color: var(--dark-grey);
+`;
 
 export default function Footer() {
   return (
-    <footer>
-        <small>@ 2020 Paulina Sędłak-Jakubowska</small>
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/psjakubowska/">
-          LinkedIn
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/iniluap">
-          GitHub
-        </a>
-    </footer>
+    <FooterStyles>
+      <p>&copy; Paulina Sędłak-Jakubowska {new Date().getFullYear()}</p>
+    </FooterStyles>
   );
 }
