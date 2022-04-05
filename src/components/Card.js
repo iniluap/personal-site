@@ -13,14 +13,14 @@ const CardStyles = styled.section`
   }
 
   h4 {
-    color: var(--primary-green);
+    color: var(--secondary-rose);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .date {
     color: var(--secondary-blue);
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -41,7 +41,7 @@ export default function Card({
       <h3>{title}</h3>
       <h4>{subtitle}</h4>
       <p className="date">{date}</p>
-      <p>{content}</p>
+      <div>{content}</div>
       <ResourceLinks
         link1Url={link1Url}
         link1AltText={link1AltText}

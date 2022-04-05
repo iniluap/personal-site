@@ -35,7 +35,7 @@ export default function Layout({ children }) {
         }}
       >
         <meta charSet="utf-8" />
-        <title>Marcin Sędłak-Jakubowski</title>
+        <title>Paulina Sędłak-Jakubowska</title>
         <meta
           name="description"
           content="Personal site of Paulina Sędłak-Jakubowska - frontend developer."
