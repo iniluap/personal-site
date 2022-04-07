@@ -29,7 +29,6 @@ export default function ProjectsPage() {
             I created a compliance roadmap with a list of recommendations and technical specification.
             As a member of the development team I implemented new features and accessibility adjustments.
             Finally, I created an in-house video tutorial on how to use our platform to create accessible landing pages.
-            Some of the results are listed in the following help center article.
           "
         ></Card>
 
