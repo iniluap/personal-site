@@ -71,6 +71,12 @@ const MobileNavLiStyled = styled.li`
   margin-bottom: 1rem;
 `;
 
+document.querySelectorAll('.nav-link').forEach((navLink) =>
+  navLink.addEventListener('click', () => {
+    window.location.hash = '';
+  }),
+);
+
 export default function MobileNav() {
   return (
     <>
