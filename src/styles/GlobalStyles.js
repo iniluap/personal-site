@@ -51,12 +51,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  :focus.sr-only {
+    width: auto;
+    height: auto;
+    top: 2rem;
+    left: 2rem;
+    overflow: auto;
+    clip: auto;
   }
 `;
 
