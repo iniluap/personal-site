@@ -28,9 +28,10 @@ const Typography = createGlobalStyle`
 
   .nav-link {
     display: inline-block;
-    transition: all 0.2s ease-out;
+    transition: var(--transition);
     font-size: 1.5rem;
     text-decoration: none;
+    text-transform: uppercase;
 
     &:hover {
       transform: scale(1.1);

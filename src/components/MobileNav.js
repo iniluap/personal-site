@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,15 +8,15 @@ import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 const MobileNavStyles = styled.nav`
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
   background-color: var(--white);
-  width: 90vw;
+  width: 100%;
   max-width: 400px;
   height: 100%;
   z-index: 10;
   padding: 4rem;
   box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%);
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 
   &:target {
     right: 0;
@@ -34,31 +35,36 @@ const MobileNavStyles = styled.nav`
   }
 `;
 
-const MobileNavTriggerStyle = styled.a`
-  width: auto;
-  height: auto;
-  padding: var(--whitespace-primary);
-  border: none;
+const MobileNavTriggerStyle = styled.button`
+  background-color: var(--primary-yellow);
+  color: white;
+  width: 5rem;
+  height: 5rem;
   position: fixed;
-  right: 0;
+  right: 0.5rem;
   top: var(--whitespace-primary);
-  background: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%),
+    0px 4px 14px 0px rgb(46 41 51 / 8%);
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-blue);
+    color: white;
+    outline: var(--primary-yellow) auto 2px;
+  }
 
   &.close-trigger {
-    display: none;
     z-index: 20;
   }
 
   &.open-trigger {
-    padding-left: 2.5rem;
-    background-color: var(--primary-yellow);
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%),
-      0px 4px 14px 0px rgb(46 41 51 / 8%);
-    color: white;
     z-index: 100;
   }
 
@@ -68,13 +74,34 @@ const MobileNavTriggerStyle = styled.a`
 `;
 
 const MobileNavLiStyled = styled.li`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 `;
 
 export default function MobileNav() {
+  const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef();
+
+  useEffect(() => {
+    const links = navRef.current?.querySelectorAll('.nav-link') || [];
+    const handleLinkClick = () => {
+      setIsOpen(false);
+    };
+    links.forEach((link) => link.addEventListener('click', handleLinkClick));
+    return () => {
+      links.forEach((link) =>
+        link.removeEventListener('click', handleLinkClick),
+      );
+    };
+  }, [isOpen]);
+
   return (
     <>
-      <MobileNavStyles id="mobileNav">
+      <MobileNavStyles
+        ref={navRef}
+        // style={{ right: isOpen ? 0 : '-100%' }}
+        style={{ display: isOpen ? 'block' : 'none' }}
+        aria-hidden={!isOpen}
+      >
         <ul className="ul-plain">
           <MobileNavLiStyled>
             <Link to="/" className="nav-link" aria-label="Go to Home page">
@@ -119,20 +146,24 @@ export default function MobileNav() {
           </MobileNavLiStyled>
         </ul>
       </MobileNavStyles>
-      <MobileNavTriggerStyle
-        href="#mobileNav"
-        aria-label="Open menu"
-        className="open-trigger"
-      >
-        <FontAwesomeIcon icon={faBars} title="Menu open icon" />
-      </MobileNavTriggerStyle>
-      <MobileNavTriggerStyle
-        href="#"
-        aria-label="Close menu"
-        className="close-trigger"
-      >
-        <FontAwesomeIcon icon={faXmark} title="Menu close icon" />
-      </MobileNavTriggerStyle>
+      {!isOpen && (
+        <MobileNavTriggerStyle
+          aria-label="Open menu"
+          className="open-trigger"
+          onClick={() => setIsOpen(true)}
+        >
+          <FontAwesomeIcon icon={faBars} title="Menu open icon" />
+        </MobileNavTriggerStyle>
+      )}
+      {isOpen && (
+        <MobileNavTriggerStyle
+          aria-label="Close menu"
+          className="close-trigger"
+          onClick={() => setIsOpen(false)}
+        >
+          <FontAwesomeIcon icon={faXmark} title="Menu close icon" />
+        </MobileNavTriggerStyle>
+      )}
     </>
   );
 }

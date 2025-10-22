@@ -10,7 +10,8 @@ const EducationStyles = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
     @media screen and (min-width: 768px) {
-      section:first-child {
+      section:first-child,
+      section:nth-child(2) {
         grid-column: 1 / span 2;
       }
     }
@@ -23,6 +24,29 @@ export default function EducationPage() {
       <SectionHeader sectionTitle="My education" />
 
       <div className="card-wrapper">
+        <Card
+          title="Accessibility (self-study)"
+          subtitle="Deque University"
+          date="2024-2025"
+          content={
+            <>
+              I completed Comprehensive Web and Digital Accessibility Training
+              covering web, documents, PDF, mobile apps, and more. This training
+              included preparation for the{' '}
+              <abbr title="International Association of Accessibility Professionals">
+                IAAP
+              </abbr>{' '}
+              exam. Some of the modules I've learned the most from are:
+              <ul>
+                <li>Designing an Accessible User Experience</li>
+                <li>Device-Independent User Input Methods</li>
+                <li>Conformance Testing, Detailed Methodology</li>
+                <li>Usability Testing for Accessibility</li>
+              </ul>
+            </>
+          }
+        ></Card>
+
         <Card
           title="Programming (self-study)"
           subtitle="Online trainings &amp; on-site workshops "

@@ -17,6 +17,7 @@ import {
   faConfluence,
   faGoogle,
   faReact,
+  faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faBug,
@@ -33,7 +34,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const TechnologiesSectionStyles = styled.section`
-  margin-bottom: 6rem;
+  margin-top: 6rem;
 
   @media screen and (min-width: 768px) {
     display: grid;
@@ -84,6 +85,23 @@ export default function TechnologiesPage() {
   return (
     <div>
       <SectionHeader sectionTitle="Technologies" />
+      <p>
+        In my current role, I work with a modern full-stack technology ecosystem
+        centered around Vue.js for building interactive user interfaces. I
+        utilize GraphQL for efficient API data querying and manipulation, while
+        styling is handled through a combination of Sass for advanced CSS
+        preprocessing and Tailwind for utility-first styling. The application
+        views are templated using HAML for clean, readable markup.
+      </p>
+      <p>
+        On the testing front, I ensure quality through comprehensive test
+        coverage using Capybara for Ruby-based integration and end-to-end
+        testing, Jest for frontend unit testing, and axe-core for automated
+        accessibility compliance testing. Additionally, I leverage Storybook to
+        develop, document, and test UI components in isolation, facilitating a
+        component-driven development workflow and improving collaboration across
+        the team.
+      </p>
       <TechnologiesSectionStyles>
         <TechnologiesLabel>Development</TechnologiesLabel>
         <TechnologiesListStyled>
@@ -102,6 +120,10 @@ export default function TechnologiesPage() {
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faJs} />
             JavaScript ES6
+          </TechnologyItemStyled>
+          <TechnologyItemStyled>
+            <FontAwesomeIcon icon={faVuejs} />
+            Vue.js
           </TechnologyItemStyled>
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faFileCode} />
