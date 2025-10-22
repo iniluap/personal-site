@@ -74,7 +74,7 @@ const MobileNavTriggerStyle = styled.button`
 `;
 
 const MobileNavLiStyled = styled.li`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 `;
 
 export default function MobileNav() {
