@@ -16,7 +16,7 @@ const MobileNavStyles = styled.nav`
   z-index: 10;
   padding: 4rem;
   box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%);
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 
   &:target {
     right: 0;
@@ -51,7 +51,7 @@ const MobileNavTriggerStyle = styled.button`
   box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%),
     0px 4px 14px 0px rgb(46 41 51 / 8%);
   cursor: pointer;
-  transition: all 0.2s ease-out;
+  transition: var(--transition);
 
   &:hover,
   &:focus {

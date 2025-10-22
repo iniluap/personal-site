@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
               0 2px 2px rgb(46 41 51 / 8%),
               0 4px 4px rgb(46 41 51 / 8%),
               0 8px 8px rgb(46 41 51 / 8%);
+    --transition: all 0.3s ease-in-out
   }
 
   * {
