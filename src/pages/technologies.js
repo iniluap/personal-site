@@ -81,26 +81,41 @@ const TechnologyItemStyled = styled.li`
   }
 `;
 
+const TechnologiesTermStyled = styled.strong`
+  color: var(--secondary-rose);
+`;
+
 export default function TechnologiesPage() {
   return (
     <div>
       <SectionHeader sectionTitle="Technologies" />
       <p>
-        In my current role, I work with a modern full-stack technology ecosystem
-        centered around Vue.js for building interactive user interfaces. I
-        utilize GraphQL for efficient API data querying and manipulation, while
-        styling is handled through a combination of Sass for advanced CSS
-        preprocessing and Tailwind for utility-first styling. The application
-        views are templated using HAML for clean, readable markup.
+        In my current role, I&nbsp;work with a&nbsp;modern full-stack technology
+        ecosystem centered around{' '}
+        <TechnologiesTermStyled>Vue.js</TechnologiesTermStyled> for building
+        interactive user interfaces. I&nbsp;utilize{' '}
+        <TechnologiesTermStyled>GraphQL</TechnologiesTermStyled> for efficient
+        API data querying and manipulation, while styling is handled through
+        a&nbsp;combination of{' '}
+        <TechnologiesTermStyled>Sass</TechnologiesTermStyled> for advanced CSS
+        preprocessing and{' '}
+        <TechnologiesTermStyled>Tailwind</TechnologiesTermStyled> for
+        utility-first styling. The&nbsp;application views are templated using{' '}
+        <TechnologiesTermStyled>HAML</TechnologiesTermStyled> for clean,
+        readable markup.
       </p>
       <p>
-        On the testing front, I ensure quality through comprehensive test
-        coverage using Capybara for Ruby-based integration and end-to-end
-        testing, Jest for frontend unit testing, and axe-core for automated
-        accessibility compliance testing. Additionally, I leverage Storybook to
-        develop, document, and test UI components in isolation, facilitating a
-        component-driven development workflow and improving collaboration across
-        the team.
+        On the testing front, I&nbsp;ensure quality through comprehensive test
+        coverage using <TechnologiesTermStyled>Capybara</TechnologiesTermStyled>{' '}
+        for Ruby-based integration and end-to-end testing,{' '}
+        <TechnologiesTermStyled>Jest</TechnologiesTermStyled> for frontend unit
+        testing, and <TechnologiesTermStyled>axe-core</TechnologiesTermStyled>{' '}
+        for automated accessibility compliance testing. Additionally,
+        I&nbsp;leverage{' '}
+        <TechnologiesTermStyled>Storybook</TechnologiesTermStyled> to develop,
+        document, and test UI components in isolation, facilitating
+        a&nbsp;component-driven development workflow and improving collaboration
+        across the team.
       </p>
       <TechnologiesSectionStyles>
         <TechnologiesLabel>Development</TechnologiesLabel>

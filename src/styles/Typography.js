@@ -44,10 +44,6 @@ const Typography = createGlobalStyle`
     text-align: center;
   }
 
-  p {
-    font-size: 1.4rem;
-  }
-
   ul {
     list-style: square;
   }
