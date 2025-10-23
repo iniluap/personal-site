@@ -36,11 +36,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 4vw 2vw;
-  }
-
-  article {
-    padding: var(--whitespace-secondary) 0;
+    padding: 4rem 2rem;
   }
 
   .m-top-3 {

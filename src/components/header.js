@@ -10,13 +10,21 @@ const HeaderStyles = styled.header`
     margin-bottom: 6rem;
   }
 
-  div {
+  .gatsby-image-wrapper {
     margin-top: 3rem;
 
     @media screen and (min-width: 768px) {
       margin-top: 0;
       height: min-content;
     }
+  }
+`;
+
+const HeaderTitleWrapperStyles = styled.div`
+  margin-top: 6rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
   }
 
   h1 {
@@ -64,14 +72,15 @@ export default function Header() {
           loading="eager"
         />
       </HeaderImageWrapperStyles>
-      <div>
+      <HeaderTitleWrapperStyles>
         <h1>
           Paulina
           <br />
           Sedlak-Jakubowska
         </h1>
-        <h2>frontend developer</h2>
-      </div>
+        <h2>senior frontend engineer</h2>
+        <h2>& accessibility advocate</h2>
+      </HeaderTitleWrapperStyles>
     </HeaderStyles>
   );
 }

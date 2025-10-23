@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const NavStyles = styled.nav`
   display: none;
+  padding: var(--whitespace-secondary) 0;
 
   @media screen and (min-width: 768px) {
     display: block;
