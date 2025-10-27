@@ -187,13 +187,12 @@ export default function TechnologiesPage() {
         <p>
           Quality is non-negotiable. My testing approach includes ensuring
           functionality works across modern browsers and respects feature
-          parity, user preferences and permissions. I test with unusual data,
-          and error scenarios to validate complete workflows. I write
-          comprehensive tests including unit tests, integration tests, and
-          axe-core accessibility checks. I make sure tests are up to date and
-          prevent reintroduction of fixed bugs. I manually test my work to
-          ensure excellent user experience with or without assistive
-          technologies.
+          parity, user preferences and permissions. I test with unusual data and
+          error scenarios to validate complete workflows. I write comprehensive
+          tests including unit tests, integration tests, and axe-core
+          accessibility checks. I make sure tests are up to date and prevent
+          reintroduction of fixed bugs. I manually test my work to ensure
+          excellent user experience with or without assistive technologies.
         </p>
         <TechnologiesListStyled>
           <TechnologyItemStyled>
@@ -224,7 +223,7 @@ export default function TechnologiesPage() {
           teammates on best practices. I explain the "why" behind suggestions,
           helping others grow. I see reviews of my code as learning
           opportunities. I prioritize keeping team velocity high by reviewing
-          promptly.
+          other people's work promptly.
         </p>
         <TechnologiesListStyled>
           <TechnologyItemStyled>
@@ -241,24 +240,24 @@ export default function TechnologiesPage() {
       <TechnologiesSectionStyles>
         <TechnologiesLabel>Measuring Impact</TechnologiesLabel>
         <p>
-          Work doesn’t stop with merging. I verify my features in the production
-          environment and monitor their impact on the product. I use Sentry to
-          identify issues directly impacting clients and Sitespeed with axe
-          plugin to make sure new features perform well over time.
+          Work doesn’t stop when code is accepted. I verify my features in the
+          production environment and monitor their impact on the product. I use
+          Sentry to identify issues directly impacting clients and Sitespeed
+          with axe plugin to make sure new features perform well over time.
         </p>
         <TechnologiesListStyled>
           <TechnologyItemStyled>
             <FontAwesomeIcon icon={faBug} />
             Sentry
           </TechnologyItemStyled>
-          <TechnologyItemStyled>Sidespeed.io</TechnologyItemStyled>
+          <TechnologyItemStyled>Sitespeed.io</TechnologyItemStyled>
         </TechnologiesListStyled>
       </TechnologiesSectionStyles>
 
       <TechnologiesSectionStyles>
         <TechnologiesLabel>Collaboration & Mentorship</TechnologiesLabel>
         <p>
-          Engineering is a team sport, and leadership means lifting others. I
+          Engineering is a team sport, and leadership means uplifting others. I
           work closely with backend engineers on API design, with designers on
           implementation fidelity, and with product managers on scope and
           priorities. I coordinate efforts across teams to integrate automated
