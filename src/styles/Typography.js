@@ -14,6 +14,7 @@ const Typography = createGlobalStyle`
     font-weight: normal;
     margin: 0;
     line-height: 1.5;
+    letter-spacing: 0.25rem;
   }
 
   a {

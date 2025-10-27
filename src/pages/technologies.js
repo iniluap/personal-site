@@ -38,6 +38,7 @@ const TechnologiesSectionStyles = styled.section`
 `;
 
 const TechnologiesLabel = styled.h3`
+  font-size: 2rem;
   border: solid 2px var(--secondary-rose);
   display: inline-block;
   min-width: 220px;
@@ -67,6 +68,7 @@ const TechnologiesListStyled = styled.ul`
 const TechnologyItemStyled = styled.li`
   padding: 0.5rem 1.5rem;
   background-color: var(--primary-green);
+  box-shadow: var(--layered-shadow-small);
   border-radius: 2rem;
   color: var(--white);
 
@@ -181,7 +183,7 @@ export default function TechnologiesPage() {
       </TechnologiesSectionStyles>
 
       <TechnologiesSectionStyles>
-        <TechnologiesLabel>Testing & Quality Assurance</TechnologiesLabel>
+        <TechnologiesLabel>Testing & Quality&nbsp;Assurance</TechnologiesLabel>
         <p>
           Quality is non-negotiable. My testing approach includes ensuring
           functionality works across modern browsers and respects feature
