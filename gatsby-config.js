@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: `Paulina Sędłak-Jakubowska`,
-    description: `Personal page of Paulina Sędłak-Jakubowska, senior frontend engineer and accessibility advocate.`,
+    description: `Personal page of Paulina Sędłak-Jakubowska, senior frontend engineer and accessibility expert.`,
     author: `Paulina Sędłak-Jakubowska`,
     siteUrl: `https://paulina.s-j.me`,
   },

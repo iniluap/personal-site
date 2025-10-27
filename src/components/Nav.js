@@ -32,9 +32,9 @@ export default function Nav() {
           <Link
             to="/technologies"
             className="nav-link"
-            aria-label="Go to Technologies I use"
+            aria-label="Go to How I work"
           >
-            Technologies I use
+            How I work
           </Link>
         </li>
         <li>

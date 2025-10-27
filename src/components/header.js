@@ -79,7 +79,7 @@ export default function Header() {
           Sedlak-Jakubowska
         </h1>
         <h2>senior frontend engineer</h2>
-        <h2>& accessibility advocate</h2>
+        <h2>& accessibility expert</h2>
       </HeaderTitleWrapperStyles>
     </HeaderStyles>
   );
