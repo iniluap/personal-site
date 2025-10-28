@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
               0 8px 8px rgb(46 41 51 / 8%);
     --layered-shadow-small: 0px 2px 8px 0px rgba(99, 99, 99, 0.2),
               1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
-    --transition: all 0.3s ease-in-out
+    --transition: all 0.3s ease-in-out;
   }
 
   * {
@@ -31,10 +31,11 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     height: 100vh;
+    background: var(--light-grey);
   }
   
   main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;

@@ -10,7 +10,6 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
 const MainStyles = styled.main`
-  background: var(--white);
   display: grid;
   grid-template-rows: auto min-content 1fr min-content;
   grid-template-areas:

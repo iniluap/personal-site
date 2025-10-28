@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ResourceLinks from './ResourceLinks';
 
 const CardStyles = styled.section`
+  background-color: var(--white);
   border: 2px solid var(--primary-yellow);
   box-shadow: var(--layered-shadow);
   padding: 1rem;

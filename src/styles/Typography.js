@@ -28,6 +28,7 @@ const Typography = createGlobalStyle`
   }
 
   .nav-link {
+    padding: 0.5rem;
     display: inline-block;
     transition: var(--transition);
     font-size: 1.5rem;
@@ -35,7 +36,6 @@ const Typography = createGlobalStyle`
     text-transform: uppercase;
 
     &:hover {
-      transform: scale(1.1);
       text-decoration: underline var(--primary-green);
       text-decoration-thickness: 0.2rem;
     }
