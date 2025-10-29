@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const HeaderStyles = styled.header`
   background-color: var(--white);
+  box-shadow: var(--layered-shadow);
 
   @media screen and (min-width: 768px) {
     background-color: var(--primary-green);

@@ -19,7 +19,7 @@ const Typography = createGlobalStyle`
 
   a {
     color: var(--dark-grey);
-    text-decoration-color: var(--primary-green);
+    text-decoration-color: var(--secondary-rose);
     text-decoration-thickness: 0.2rem;
 
     &:hover {
@@ -30,14 +30,12 @@ const Typography = createGlobalStyle`
   .nav-link {
     padding: 0.5rem;
     display: inline-block;
-    transition: var(--transition);
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
 
     &:hover {
-      text-decoration: underline var(--primary-green);
-      text-decoration-thickness: 0.2rem;
+      text-decoration: underline var(--secondary-rose);
     }
   }
 

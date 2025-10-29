@@ -66,7 +66,7 @@ const TechnologiesDescriptionStyled = styled.p`
 const TechnologyItemStyled = styled.li`
   padding: 0.5rem 1.5rem;
   background-color: var(--primary-green);
-  box-shadow: var(--layered-shadow-small);
+  box-shadow: var(--layered-shadow);
   border-radius: 2rem;
   color: var(--white);
 

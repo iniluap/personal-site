@@ -12,11 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --secondary-rose: #a13d34;
     --whitespace-primary: 2rem;
     --whitespace-secondary: 3rem;
-    --layered-shadow: 0 1px 1px rgb(46 41 51 / 8%),
-              0 2px 2px rgb(46 41 51 / 8%),
-              0 4px 4px rgb(46 41 51 / 8%),
-              0 8px 8px rgb(46 41 51 / 8%);
-    --layered-shadow-small: 0px 2px 8px 0px rgba(99, 99, 99, 0.2),
+    --layered-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2),
               1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s ease-in-out;
   }
