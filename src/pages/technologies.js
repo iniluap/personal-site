@@ -59,7 +59,7 @@ const TechnologiesListStyled = styled.ul`
 `;
 
 const TechnologiesDescriptionStyled = styled.p`
-  padding-left: 2rem;
+  padding-left: var(--whitespace-primary);
   border-left: 1px solid var(--secondary-blue);
 `;
 

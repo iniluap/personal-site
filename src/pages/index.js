@@ -1,25 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
-import styled from 'styled-components';
-
-const SocialLinksStyles = styled.a`
-  font-size: 2rem;
-
-  &:hover {
-    .fa-linkedin-in {
-      color: #0072b1;
-    }
-
-    .fa-github {
-      color: #171515;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    padding: 1rem;
-  }
-`;
 
 export default function IndexPage() {
   return (
@@ -54,32 +33,6 @@ export default function IndexPage() {
         I'm passionate about interior design and minimalism. On my perfect day
         off I would sit on the balcony, with a book in hand and my dog nearby.
       </p>
-      <ul className="m-top-3 ul-plain ul-links">
-        <li>
-          <SocialLinksStyles
-            href="https://www.linkedin.com/in/psjakubowska/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedinIn}
-              title="LinkedIn accout of Paulina Sędłak-Jakubowska"
-            />
-          </SocialLinksStyles>
-        </li>
-        <li>
-          <SocialLinksStyles
-            href="https://github.com/iniluap"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              title="GitHub accout of Paulina Sędłak-Jakubowska"
-            />
-          </SocialLinksStyles>
-        </li>
-      </ul>
     </>
   );
 }

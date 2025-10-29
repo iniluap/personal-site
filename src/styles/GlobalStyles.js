@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem var(--whitespace-primary);;
   }
 
   .m-top-3 {

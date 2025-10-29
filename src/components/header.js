@@ -7,7 +7,7 @@ const HeaderStyles = styled.header`
 
   @media screen and (min-width: 768px) {
     background-color: var(--primary-green);
-    padding: 2rem;
+    padding: var(--whitespace-primary);
     display: flex;
     gap: 4rem;
     align-items: end;
@@ -22,7 +22,7 @@ const HeaderStyles = styled.header`
 
 const HeaderTitleWrapperStyles = styled.div`
   background-color: var(--white);
-  padding: 2rem;
+  padding: var(--whitespace-primary);
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
