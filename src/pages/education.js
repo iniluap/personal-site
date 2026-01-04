@@ -25,6 +25,31 @@ export default function EducationPage() {
 
       <div className="card-wrapper">
         <Card
+          title="Sociology & Sociolinguistics"
+          subtitle="University of Warsaw, Open University"
+          date="ongoing since December 2025"
+          content={
+            <>
+              I'm taking specialized courses examining language, power, new
+              technologies and social structures:
+              <ul>
+                <li>Digital Hygiene (completed 2025)</li>
+                <li>
+                  Do You Know What You're Saying? The Hidden Power of Words (in
+                  progress)
+                </li>
+                <li>
+                  What We Do in a Group, or Sociology with Imagination (in
+                  progress)
+                </li>
+              </ul>
+              These courses inform my research on how language in AI systems and
+              digital products shapes public perception and reinforces or
+              challenges power structures.
+            </>
+          }
+        ></Card>
+        <Card
           title="Accessibility (self-study)"
           subtitle="Deque University"
           date="2024-2025"
@@ -76,13 +101,6 @@ export default function EducationPage() {
           subtitle="University of Silesia in Katowice"
           date="2015"
           content="Thesis in applied linguistics on socio-cultural images of femininity in newspaper discourse."
-        ></Card>
-
-        <Card
-          title="Instrumental Studies"
-          subtitle="Academy of Music in Łódź"
-          date="2008-2012"
-          content="Bachelor studies in cello performance, with focus on chamber and baroque music."
         ></Card>
       </div>
     </EducationStyles>

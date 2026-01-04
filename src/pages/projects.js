@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionHeader from '../components/SectionHeader';
+import ExternalLink from '../components/ExternalLink';
 import Card from '../components/Card';
 
 const ProjectsStyles = styled.div`
@@ -9,7 +10,8 @@ const ProjectsStyles = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
   @media screen and (min-width: 768px) {
-    section:first-child {
+    section:first-child,
+    section:nth-child(2) {
       grid-column: 1 / span 2;
     }
   }
@@ -21,8 +23,29 @@ export default function ProjectsPage() {
       <SectionHeader sectionTitle="Projects" />
       <ProjectsStyles className="card-wrapper">
         <Card
+          title="Product Accessibility Working Group"
+          subtitle="GitLab"
+          date="2023 - present, Warsaw, Poland"
+          content={
+            <>
+              I lead GitLab's{' '}
+              <ExternalLink
+                href="https://handbook.gitlab.com/handbook/company/working-groups/product-accessibility/"
+                text="Product Accessibility Working Group"
+              />
+              , where we focus on defining technical strategies for
+              accessibility automations and tools adoption. I coordinate with
+              cross-functional teams to ensure that accessibility is integrated
+              into the product development lifecycle. I also mentor team members
+              on accessibility best practices and contribute to internal
+              documentation and training materials.
+            </>
+          }
+        ></Card>
+
+        <Card
           title="WCAG 2.0 compliance"
-          subtitle="Enterprise landing-page building platform"
+          subtitle="Instapage - Enterprise landing-page building platform"
           date="2020 - 2021, Warsaw, Poland"
           content="
             I conducted an internal audit of a landing page building platform against WCAG 2.0 compliance.

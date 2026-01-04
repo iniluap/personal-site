@@ -5,37 +5,70 @@ export default function IndexPage() {
   return (
     <>
       <p>
-        Hi! My name is Paulina. I&nbsp;am a&nbsp;self-taught frontend engineer.
-        Since 2017, I&nbsp;have been involved in various projects creating
-        landing-pages, websites and web applications. In 2020, I&nbsp;started
-        working on{' '}
+        I'm Paulina, a Senior Frontend Engineer and accessibility specialist
+        based in Warsaw. For the past 8 years, I've built interfaces used by
+        millions of people daily, with a focus on making the web accessible to
+        everyone.
+      </p>
+      <p className="m-top-4">
+        In 2020, I&nbsp;started working on{' '}
         <ExternalLink href="https://www.instapage.com/" text="Instapage" />,
-        an&nbsp;enterprise Angular application in marketing tech field, as one
-        of the two frontend engineers. Since 2022, I&nbsp;work as
+        an&nbsp;enterprise Angular application in the marketing tech field, as
+        one of the two frontend engineers. Since 2022, I&nbsp;work as
         a&nbsp;software engineer at{' '}
         <ExternalLink href="https://about.gitlab.com/" text="GitLab" />, where
         I&nbsp;contribute to the Source Code Management group and lead the
-        Product Accessibility Working group. I&nbsp;do not shy away from
-        learning new frameworks or content management systems. I&nbsp;also help
-        out with backend related topics and QA processes.
+        Product Accessibility Working group.
       </p>
       <p className="m-top-4">
-        I've been a&nbsp;volunteer at a&nbsp;non-profit, where I&nbsp;organized
-        youth camps, workshops, and trainings, leading educational exercises on
-        human rights, diversity, sustainable development, and peaceful conflict
-        resolution. I've also co‑organized{' '}
-        <ExternalLink href="https://www.pylight.org/" text="PyLight Waw" />,
-        a&nbsp;beginner‑friendly Python meetup and{' '}
-        <ExternalLink
-          href="https://djangogirls.org/en/warszawa/"
-          text="Django Girls Warsaw"
-        />
-        , a&nbsp;free programming workshops for women.
+        My work spans the full development lifecycle - from early ideation and
+        design collaboration to implementation, testing, and measuring impact in
+        production. I specialize in Vue.js, digital accessibility, and working
+        with complex legacy codebases. I'm passionate about well-written and
+        well-organised code, inclusive design, and ensuring that every feature I
+        build works seamlessly with assistive technologies.
       </p>
       <p className="m-top-4">
-        I'm passionate about interior design and minimalism. On my perfect day
-        off I&nbsp;would sit on the balcony, with a&nbsp;book in hand and my dog
-        nearby.
+        <strong>
+          I'm expanding my practice to examine the social implications of AI
+          systems and digital products.
+        </strong>{' '}
+      </p>
+      <p className="m-top-4">
+        As someone who's implemented features at scale, I've become increasingly
+        interested in the language used to market and explain AI - how these
+        linguistic choices shape public perception, encode power dynamics, and
+        obscure technical realities. As someone who could build these systems,
+        I'm choosing to critically analyze them instead.
+      </p>
+      <p className="m-top-4">
+        I'm particularly focused on AI discourse: the anthropomorphization in
+        chatbot interfaces, the promises made by AI companion marketing, and how
+        narratives about AI "taking over" jobs and the world can overshadow
+        present-day social issues - like impacts on mental health, labor
+        practices, and community connection - that we could actually address and
+        mitigate now.
+      </p>
+      <p className="m-top-4">
+        I'm currently pursuing coursework in sociolinguistics and sociology at
+        the University of Warsaw, preparing for{' '}
+        <abbr title="International Association of Accessibility Professionals">
+          IAAP
+        </abbr>{' '}
+        certification, and conducting independent research on digital discourse
+        that I'll be publishing on this site.
+      </p>
+      <p className="m-top-4">
+        Before tech, I studied English philology with a focus on
+        sociolinguistics and taught ESL. I've always been interested in how
+        language shapes power and perception - now I'm applying that lens to the
+        systems I know best.
+      </p>
+      <p className="m-top-4">
+        I believe engineers need critical literacy about the social weight of
+        their technical decisions. The interfaces we build aren't neutral.
+        They're linguistic and social systems that shape how millions of people
+        understand themselves and their world.
       </p>
     </>
   );
